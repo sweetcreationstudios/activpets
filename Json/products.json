@@ -19,7 +19,7 @@ var jsonObject = {
                 "Pumpkin",
                 "Apple"
             ],
-            "image": "images/treats/dogs/pumpkin-apple.JPG",
+            "image": "/images/treats/dogs/pumpkin-apple.JPG",
             "price": 8,
         },
         {
@@ -31,7 +31,7 @@ var jsonObject = {
                 "Banana",
                 "Coconut"
             ],
-            "image": "images/treats/dogs/peanut-banana-coconut.JPG",
+            "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
             "price": 8,
         }
     ]
