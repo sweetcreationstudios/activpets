@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../week8/CSS/style.css">
+    <link rel="stylesheet" href="../week8/CSS/main.css">
+    <link rel="stylesheet" href="../week8/CSS/header.css">
+    <link rel="stylesheet" href="../week8/CSS/heroImg.css">
+    <link rel="stylesheet" href="../week8/CSS/search.css">
+    <link rel="stylesheet" href="../week8/CSS/subscribePopup/style-prefix-main.css">
+    <link rel="stylesheet" href="../week8/CSS/subscribePopup/subscribePopUpAlert.css">
+    <link rel="stylesheet" href="../week8/CSS/fadeToggle.css">
+    <link rel="stylesheet" href="../week8/CSS/onMouseZoom.css">
+    <link rel="stylesheet" href="../week8/CSS/imageHoverTextEffect.css">
+    <link rel="stylesheet" href="../week8/CSS/newsletterSignUp.css">
+    <link rel="stylesheet" href="../week8/CSS/horizontalScrollGallery.css">
+    <link rel="stylesheet" href="../week8/CSS/footer.css">
+    <!--    FONT AWESOME START  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--    FONT AWESOME END    -->
+    <script src="JavaScript/elevatezoom-master/jquery-1.8.3.min.js"></script>
+    <script src="JavaScript/elevatezoom-master/jquery.elevatezoom.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+    <!-- <script src="http://code.jquery.com/jquery-1.8.2.js"></script> -->
+    <title>ActivPets</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <div class="navigation">
+            <div class="headerTop">
+                <p>
+                    Love them like family. Nourish them like family.
+                </p>
+            </div>
+            <!--  START LOGO  -->
+            <div class="navbar">
+                <a href="../week8/index8.html">
+                    <img src="../../images/activpets-logos/activpets-logo-white-trans.png" alt="" height="100px">
+                </a>
+                <!-- END LOGO  -->
+                <!--  START HEADER NAV LINKS  -->
+
+                <!--                SEARCH STARTS-->
+                <!--                Reference Link: https://www.w3schools.com/howto/howto_js_search_menu.asp-->
+                <div class="searchbar">
+                    <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search.."
+                        title="Type in a category" name="searchBar">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+                <!--                SEARCH ENDS -->
+
+                <nav class="nav-links" id="myMenu">
+                    <ol>
+                        <li><a href="../week8/index8.html">Home</a></li>
+                        <li><a href="../week8/service8.html">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="../week8/contact8.html">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!--  END HEADER NAV LINKS  -->
+    </header>
+
+    <main>
+        <div class="top-container">
+
+            <!--      START HERO IMAGE-->
+
+
+            <div class="hero-image">
+                <div class="heroContainer">
+                    <h1><span>ActivPets</span></h1>
+                    <span class="des">Pet Bakery, Grooming, Accessories & more!</span>
+                    <a class="hero-btn" href="#WinterDeals">Winter Deals</a>
+                </div>
+            </div>
+
+
+            <!--      END HERO IMAGE-->
+
+
+            <!--          START Subscribe PopUp Alert        -->
+            <div class="modal" data-modal>
+                <div class="modal-close-overlay" data-modal-overlay></div>
+                <div class="modal-content">
+                    <button class="modal-close-btn" data-modal-close>
+                        <i name="close-outline" class="fa-regular fa-square-xmark fa-x"></i>
+                    </button>
+                    <div class="newsletter-img">
+                        <img src="/images/newsletter-img.png" alt="subscribe newsletter" width="400" height="400">
+                    </div>
+                    <div class="newsletter">
+                        <form action="https://formspree.io/f/mgejbdan" method="POST">
+                            <div class="newsletter-header">
+                                <h3 class="newsletter-title"><b>Subscribe Newsletter</b></h3>
+                                <p class="newsletter-desc">
+                                    Subscribe the <b>ActivPets</b> to get latest products and discount update.
+                                </p>
+                            </div>
+                            <input type="email" name="email" class="email-field" placeholder="Email Address"
+                                autocomplete='off' required>
+                            <button type="submit" class="btn-newsletter">Subscribe</button>
+                            <button>No Thanks</button>
+                            <h6>
+                                By signing up to our newsletter, you agree to ActivPet's Privacy Policy. Your personal
+                                data will be passed on to ActivPets so we can contact you about our products and send
+                                you surveys via email. Data processing and the statistical analysis of the data will be
+                                carried out by our service provider, Sweet Creation Studios (USA). You can unsubscribe
+                                at any time by using the unsubscribe link in each e-mail. Please visit the ActivPets
+                                Group Privacy Notice for more information.
+                            </h6>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--          END Subscribe PopUp Alert        -->
+
+
+        <!--  START Image Hover Text Effect  -->
+        <div class="outterwrapper3">
+            <div class="wrapper">
+                <div class="imageHoverZoom" id="WinterDeals">
+                    <h2>What's New!</h2>
+                    <h4>New Frozen Flavored Treats!</h4>
+                    <div class="imageHoverRow">
+                        <div class="imageHoverColumn">
+                            <div class="imageHover">
+                                <img class="imageHover__img" src="../images/treats/dogs/peanut-banana-coconut.JPG"
+                                    id="imgHover_01" />
+                                <div class="imageHover__overlay imageHover__overlay--primary">
+                                    <div class="imageHover__title"> Peanut Banana Coconut</div>
+                                    <p class="imageHover__decription">$8 - 6oz
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imageHoverColumn">
+                            <div class="imageHover">
+                                <img class="imageHover__img" src="../images/treats/dogs//carrot-brothsicles.jpg"
+                                    id="imgHover_02" />
+                                <div class="imageHover__overlay imageHover__overlay--primary">
+                                    <div class="imageHover__title"> Carrot Brothsicles</div>
+                                    <p class="imageHover__decription">$6 - 6oz
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imageHoverColumn">
+                            <div class="imageHover">
+                                <img class="imageHover__img" src="../images/treats/dogs/carrot-cake-biskets.JPG"
+                                    id="imgHover_03" />
+                                <div class="imageHover__overlay imageHover__overlay--primary">
+                                    <div class="imageHover__title"> Carrot Cake Bisket</div>
+                                    <p class="imageHover__decription">$8 - 6oz
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imageHoverColumn">
+                            <div class="imageHover">
+                                <img class="imageHover__img" src="../images/treats/dogs/frozen-blueberry-banana.png"
+                                    id="imgHover_04" />
+                                <div class="imageHover__overlay imageHover__overlay--primary">
+                                    <div class="imageHover__title"> Frozen Blueberry-Banana</div>
+                                    <p class="imageHover__decription">$6 - 6oz
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imageHoverColumn">
+                            <div class="imageHover">
+                                <img class="imageHover__img" src="../images/treats/dogs/pumpkin-apple.JPG"
+                                    id="imgHover_05" />
+                                <div class="imageHover__overlay imageHover__overlay--primary">
+                                    <div class="imageHover__title"> Pumpkin Apple</div>
+                                    <p class="imageHover__decription">$6 - 6oz
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  END Image Hover Text Effect  -->
+
+
+        <!--       START OnMouse Hover Image Zoom-->
+        <div class="outterwrapper1">
+            <div class="wrapper">
+                <div class="onHoverZoom">
+                    <h2>Grooming Goodies</h2>
+                    <h4>Bandanas</h4>
+                    <div class="zoomRow">
+                        <div class="zoomColumn">
+                            <img id="zoom_01" src="../images/apparel/bandanas/(1x1)activpets-bandanas-1.png"
+                                height="200px"
+                                data-zoom-image="../images/apparel/bandanas/(20x20)activpets-bandanas-1.png" />
+                            <p>Chihuahuas</p>
+                        </div>
+                        <div class="zoomColumn">
+                            <img id="zoom_02" src="../images/apparel/bandanas/(1x1)activpets-bandanas-2.png"
+                                height="200px"
+                                data-zoom-image="../images/apparel/bandanas/(20x20)activpets-bandanas-2.png" />
+                            <p>Pandas</p>
+                        </div>
+                        <div class="zoomColumn">
+                            <img id="zoom_03" src="../images/apparel/bandanas/(1x1)activpets-bandanas-3.png"
+                                height="200px"
+                                data-zoom-image="../images/apparel/bandanas/(20x20)activpets-bandanas-3.png" />
+                            <p>Cats in a Bottle</p>
+                        </div>
+                        <div class="zoomColumn">
+                            <img id="zoom_04" src="../images/apparel/bandanas/(1x1)activpets-bandanas-4.png"
+                                height="200px"
+                                data-zoom-image="../images/apparel/bandanas/(20x20)activpets-bandanas-4.png" />
+                            <p>Sun & Cloud</p>
+                        </div>
+                        <div class="zoomColumn">
+                            <img id="zoom_05" src="../images/apparel/bandanas/(1x1)activpets-bandanas-5.png"
+                                height="200px"
+                                data-zoom-image="../images/apparel/bandanas/(20x20)activpets-bandanas-5.png" />
+                            <p>Cat Love</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--       END OnMouse Hover Image Zoom-->
+
+
+        <!--START CENTER IMAGE-->
+
+
+        <div class="outterwrapper2">
+            <div class="wrapper">
+                <div class="centerImgContainer">
+                    <div class="centerImg">
+                        <!--   1st Image    -->
+                        <img src="../images/apparel/chihuahua-sunglasses-crewnecksweater.png" id='hoverImg'
+                            alt="chihuahua-sunglasses-crewnecksweater" width="765.5px" height="533.5px">
+                        <!--    2nd Image   -->
+                        <!--  <img src="../images/apparel/chihuahua-sunglasses-tshirt.png" width="765.5px" height="533.5px">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--END CENTER IMAGE-->
+
+
+        <!--START JOIN THE ACTIVPETS PACK NEWSLETTER-->
+        <div class="outterwrapper">
+            <div class="wrapper">
+                <div class="joinNewsletter">
+                    <form action="https://formspree.io/f/mgejbdan" method="POST">
+                        <h2>Join the ActivPets Pack</h2>
+                        <h5>Sign up to get emails about the latest deals, product drops, pet health tips and more!</h5>
+                        <input type="email" name="Email" class="inputNewsletter" placeholder="Email Address"
+                            autocomplete='off' required>
+                        <button class="signup-btn">Sign Up</button>
+                    </form>
+                    <!--                    <button id="clear-btn">Clear</button>-->
+                </div>
+            </div>
+        </div>
+
+        <!--END JOIN THE ACTIVPETS PACK NEWSLETTER-->
+
+    </main>
+    <!--    START Footer Content-->
+    <footer>
+        <nav class="footerContainer">
+            <div class="socialIcons">
+                <ul>
+                    <a href="https://www.instagram.com/activpets/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ActivPets/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@ActivPets" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@ActivPets2" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </ul>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="../week8/index8.html">Home</a></li>
+                    <li><a href="../week8/service8.html">Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="../week8/contact8.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footerBottom">
+            <p>
+                Copyright Reserved &copy; 2023; Designed by: <span class="designer">Sweet Creation Studios - Coder:
+                    <strong>Marilynn Ramirez</strong></span>
+            </p>
+            <p>
+                Do Not Sell or Share My Personal Information
+            </p>
+        </div>
+    </footer>
+    <!--    END Footer Content-->
+
+
+    <script src="../week8/JavaScript/search.js"></script>
+    <!--    <script src="/week8/JavaScript/popupAlert.js"></script>-->
+    <script src="../week8/JavaScript/modal.js"></script>
+    <script src="../week8/JavaScript/fadeToggle.js"></script>
+    <script src="../week8/JavaScript/onMouseZoom.js"></script>
+    <script src="../week8/JavaScript/horizontalScrollGallery.js"></script>
+    <!--    <script src="JavaScript/clearBtn.js"></script>-->
+
+</body>
+
+</html>

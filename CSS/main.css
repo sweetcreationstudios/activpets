@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
+
+main {
+    background-color: snow;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1175px;
+    background-color: snow;
+}
+
+.outterwrapper {
+    background-color: pink;
+}

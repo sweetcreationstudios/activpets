@@ -1,0 +1,184 @@
+/**
+ * overlay 
+ */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: hsla(0, 0%, 0%, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 15;
+    transition: 0.5s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/**
+ * MODAL: A modal (also called a modal window or lightbox) is a web page element that displays 
+ in front of and deactivates all other page content. To return to the main content,
+ the user must engage with the modal by completing an action or by closing it.
+ */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: hsla(0, 0%, 0%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10;
+    animation: popup 1s ease-in-out 5s forwards;
+}
+
+@keyframes popup {
+
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+}
+
+.modal.closed {
+    display: none;
+}
+
+.modal-close-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.newsletter-img {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 350px;
+    margin: 20px;
+    /*    background: var(--white);*/
+    background: white;
+    /*    border-radius: var(--border-radius-md);*/
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+    animation: scaleUp 0.5s ease-in-out 5s forwards;
+}
+
+@keyframes scaleUp {
+
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    /*    background: var(--salmon-pink);*/
+    background: white;
+    /*    color: var(--white);*/
+    color: #ff00aa;
+    font-size: 14px;
+    padding: 5px;
+    /*    border-radius: var(--border-radius-sm);*/
+    border-radius: 5px;
+}
+
+.modal-close-btn:hover {
+    opacity: 0.9;
+}
+
+.modal-close-btn i {
+    --i-stroke-width: 70px;
+}
+
+.newsletter {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.newsletter-header {
+    margin-bottom: 20px;
+}
+
+.newsletter-title {
+    /*    color: var(--onyx);*/
+    color: #1B1B1B;
+    /*    font-size: var(--fs-2);*/
+    font-size: 20px;
+    font-weight: var(--weight-600);
+    margin-bottom: 10px;
+}
+
+.newsletter-desc {
+    /*    color: var(--sonic-silver);*/
+    color: #757575;
+    /*    font-size: var(--fs-7);*/
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.email-field {
+    /*    font-size: var(--fs-7);*/
+    font-size: 14px;
+    padding: 8px 16px;
+    /*    border-radius: var(--border-radius-sm);*/
+    border-radius: 5px;
+    /*    border: 1px solid var(--cultured);*/
+    border: 1px solid;
+    margin-bottom: 16px;
+}
+
+.btn-newsletter {
+    /*    background: var(--eerie-black);*/
+    background: #1B1B1B;
+    /*    color: var(--white);*/
+    color: white;
+    /*    font-size: var(--fs-7);*/
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: var(--weight-600);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    /*    border-radius: var(--border-radius-sm);*/
+    border-radius: 5px;
+    margin: auto;
+    transition: var(--transition-timing);
+}
+
+.btn-newsletter:hover {
+    /*    background: var(--salmon-pink);*/
+    background: #ff5793;
+}

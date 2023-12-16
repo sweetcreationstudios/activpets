@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivPets Bakery Products</title>
+    <link rel="stylesheet" href="../week8/CSS/style.css">
+    <link rel="stylesheet" href="../week8/CSS/main.css">
+    <link rel="stylesheet" href="../week8/CSS/header.css">
+    <link rel="stylesheet" href="../week8/CSS/heroImg.css">
+    <link rel="stylesheet" href="../week8/CSS/search.css">
+    <!-- <link rel="stylesheet" href="../week8/CSS/subscribePopup/style-prefix-main.css"> -->
+    <!-- <link rel="stylesheet" href="../week8/CSS/subscribePopup/subscribePopUpAlert.css"> -->
+    <!-- <link rel="stylesheet" href="../week8/CSS/fadeToggle.css"> -->
+    <!-- <link rel="stylesheet" href="../week8/CSS/onMouseZoom.css"> -->
+    <!-- <link rel="stylesheet" href="../week8/CSS/imageHoverTextEffect.css"> -->
+    <link rel="stylesheet" href="../week8/CSS/newsletterSignUp.css">
+    <link rel="stylesheet" href="../week8/CSS/products.css">
+    <!-- <link rel="stylesheet" href="../week8/CSS/horizontalScrollGallery.css"> -->
+    <link rel="stylesheet" href="../week8/CSS/footer.css">
+    <!--    FONT AWESOME START  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--    FONT AWESOME END    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/week8/Json/products.json"></script>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <div class="navigation">
+            <div class="headerTop">
+                <p>
+                    Love them like family. Nourish them like family.
+                </p>
+            </div>
+            <!--  START LOGO  -->
+            <div class="navbar">
+                <a href="../week8/index8.html">
+                    <img src="../../images/activpets-logos/activpets-logo-white-trans.png" alt="" height="100px">
+                </a>
+                <!-- END LOGO  -->
+                <!--  START HEADER NAV LINKS  -->
+
+                <!--                SEARCH STARTS-->
+                <!--                Reference Link: https://www.w3schools.com/howto/howto_js_search_menu.asp-->
+                <div class="searchbar">
+                    <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search.."
+                        title="Type in a category" name="searchBar">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+                <!--                SEARCH ENDS -->
+
+                <nav class="nav-links" id="myMenu">
+                    <ol>
+                        <li><a href="../week8/index8.html">Home</a></li>
+                        <li><a href="../week8/service8.html">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="../week8/contact8.html">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!--  END HEADER NAV LINKS  -->
+    </header>
+
+    <main>
+        <div class="top-container">
+
+            <!--      START HERO IMAGE-->
+
+
+            <div class="hero-image">
+                <div class="heroContainer">
+                    <h1><span>Bakery Products</span></h1>
+                    <span class="des">Pet Bakery, Grooming, Accessories & more!</span>
+                    <a class="hero-btn" href="#WinterDeals">Winter Deals</a>
+                </div>
+            </div>
+
+
+            <!--      END HERO IMAGE-->
+
+
+
+            <!-- START JSON PRODUCTS  -->
+            <!-- YOUTUBE: https://www.youtube.com/watch?v=Xu3A5i6m4q0 -->
+            <div class="wrapper">
+                <div class="container py5">
+                    <div class="text-center">
+                        <h2 class="display-7">PRODUCTS</h2>
+                    </div>
+                    <div class="row">
+                        <ul id="home_products"></ul>
+                    </div>
+
+                </div>
+
+                <!-- END JSON PRODUCTS  -->
+
+
+                <!--START JOIN THE ACTIVPETS PACK NEWSLETTER-->
+                <div class="outterwrapper">
+                    <div class="wrapper">
+                        <div class="joinNewsletter">
+                            <form action="https://formspree.io/f/mgejbdan" method="POST">
+                                <h2>Join the ActivPets Pack</h2>
+                                <h5>Sign up to get emails about the latest deals, product drops, pet health tips and
+                                    more!
+                                </h5>
+                                <input type="email" name="Email" class="inputNewsletter" placeholder="Email Address"
+                                    autocomplete='off' required>
+                                <button class="signup-btn">Sign Up</button>
+                            </form>
+                            <!--                    <button id="clear-btn">Clear</button>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--END JOIN THE ACTIVPETS PACK NEWSLETTER-->
+
+    </main>
+
+    <!--    START Footer Content-->
+    <footer>
+        <nav class="footerContainer">
+            <div class="socialIcons">
+                <ul>
+                    <a href="https://www.instagram.com/activpets/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ActivPets/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@ActivPets" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@ActivPets2" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </ul>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="../week8/index8.html">Home</a></li>
+                    <li><a href="../week8/service8.html">Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="../week8/contact8.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footerBottom">
+            <p>
+                Copyright Reserved &copy; 2023; Designed by: <span class="designer">Sweet Creation Studios - Coder:
+                    <strong>Marilynn Ramirez</strong></span>
+            </p>
+            <p>
+                Do Not Sell or Share My Personal Information
+            </p>
+        </div>
+    </footer>
+    <!--    END Footer Content-->
+
+
+    <script src="../week8/JavaScript/search.js"></script>
+    <script src="/week8/JavaScript/bakeryProducts.js"></script>
+    <!-- <script src="/week8/JavaScript/popupAlert.js"></script> -->
+    <!-- <script src="../week8/JavaScript/modal.js"></script> -->
+    <!-- <script src="../week8/JavaScript/fadeToggle.js"></script> -->
+    <!-- <script src="../week8/JavaScript/onMouseZoom.js"></script> -->
+    <!-- <script src="../week8/JavaScript/horizontalScrollGallery.js"></script> -->
+</body>
+
+</html>

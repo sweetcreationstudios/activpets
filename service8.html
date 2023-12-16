@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/week8/CSS/style.css">
+    <link rel="stylesheet" href="/week8/CSS/header.css">
+    <link rel="stylesheet" href="/week8/CSS/search.css">
+    <link rel="stylesheet" href="/week8/CSS/main.css">
+    <link rel="stylesheet" href="/week8/CSS/heroImg.css">
+    <link rel="stylesheet" href="/week8/CSS/servicesCards.css">
+    <link rel="stylesheet" href="/week8/CSS/serviceScrollGallery.css">
+    <link rel="stylesheet" href="/week8/CSS/footer.css">
+    <!--    FONT AWESOME START  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--    FONT AWESOME END    -->
+    <title>ActivPets</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <div class="navigation">
+            <!--
+            <div class="headerTop">
+                <p>
+                    Love them like family. Nourish them like family.
+                </p>
+            </div>
+-->
+            <!--  START LOGO  -->
+            <div class="navbar">
+                <a href="/week8/index8.html">
+                    <img src="../../images/activpets-logos/activpets-logo-white-trans.png" alt="" height="100px">
+                </a>
+                <!-- END LOGO  -->
+
+
+                <!--                SEARCH STARTS-->
+                <!--                Reference Link: https://www.w3schools.com/howto/howto_js_search_menu.asp-->
+                <div class="searchbar">
+                    <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search.."
+                        title="Type in a category" name="searchBar">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+                <!--                SEARCH ENDS -->
+
+
+                <!--  START HEADER NAV LINKS  -->
+                <nav class="nav-links">
+                    <ol>
+                        <li><a href="/week8/index8.html">Home</a></li>
+                        <li><a href="/week8/service8.html">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="/week8/contact8.html">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!--  END HEADER NAV LINKS  -->
+    </header>
+
+    <main>
+        <!--      START HERO IMAGE-->
+
+
+        <div class="hero-image">
+            <div class="heroContainer">
+                <h1><span>SERVICES</span></h1>
+                <span class="des">Pet Bakery, Grooming, Accessories & more!</span>
+                <a class="hero-btn" href="#OurServices">Explore Services</a>
+            </div>
+        </div>
+
+
+        <!--      END HERO IMAGE-->
+
+        <!--        START SERVICE MENU CARDS        -->
+        <div class="serviceContainer" id="OurServices">
+            <h1>Our Services</h1>
+            <div class="row">
+                <div class="service">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <h2>Pet Bakery</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <a class="product-btn" href="/week8/bakeryProducts.html"><button>VIEW PRODUCTS</button></a>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <h2>Pet Kitchen</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-shower"></i>
+                    <h2>Pet Grooming</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-taxi"></i>
+                    <h2>Pet Taxi</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-dog"></i>
+                    <h2>Adoption</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-paw"></i>
+                    <h2>Dog Walk</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-house"></i>
+                    <h2>Pet Sitting</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h2>Donations</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+        <!--        END SERVICE MENU CARDS        -->
+
+        <!-- START HORIZONTAL SCROLL GALLERY -->
+        <div class="gallery-wrap">
+            <img src="/images/dogPhotos/left-purple.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span>
+                        <img src="/images/dogPhotos/dog1.png" alt="img1"></span>
+                    <span>
+                        <img src="/images/dogPhotos/dog2.png" alt="img2"> </span>
+                    <span>
+                        <img src="/images/dogPhotos/dog3.png" alt="img3"> </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="/images/dogPhotos/dog4.png" alt="img4"> </span>
+                    <span>
+                        <img src="/images/dogPhotos/dog5.png" alt="img5"> </span>
+                    <span>
+                        <img src="/images/dogPhotos/dog6.png" alt="img6"> </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="/images/dogPhotos/dog7.png" alt="img7"> </span>
+                    <span>
+                        <img src="/images/dogPhotos/dog8.png" alt="img8"> </span>
+                    <span>
+                        <img src="/images/dogPhotos/dog9.png" alt="img9"> </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="/images/dogPhotos/dog10.png" alt="img10"> </span>
+                    <span>
+                        <img src="/images/dogPhotos/dog11.png" alt="img11"> </span>
+                    <span>
+                        <img src="/images/dogPhotos/dog12.png" alt="img12"> </span>
+                </div>
+            </div>
+            <img src="/images/dogPhotos/right-purple.png" id="nextBtn">
+        </div>
+        <!-- END HORIZONTAL SCROLL GALLERY -->
+    </main>
+    <!--    START Footer Content-->
+    <footer>
+        <nav class="footerContainer">
+            <!-- START SOCIAL MEDIA BUTTONS -->
+            <div class="socialIcons">
+                <ul>
+                    <a href="https://www.instagram.com/activpets/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ActivPets/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@ActivPets" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@ActivPets2" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </ul>
+            </div>
+            <!-- END SOCIAL MEDIA BUTTONS -->
+
+            <div class="footerNav">
+                <ul>
+                    <li><a href="/week8/index8.html">Home</a></li>
+                    <li><a href="/week8/service8.html">Service</a></li>
+
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="/week8/contact8.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footerBottom">
+            <p>
+                Copyright Reserved &copy; 2023; Designed by: <span class="designer">Sweet Creation Studios - Coder:
+                    <strong>Marilynn Ramirez</strong></span>
+            </p>
+            <p>
+                Do Not Sell or Share My Personal Information
+            </p>
+        </div>
+    </footer>
+    <!--    END Footer Content-->
+
+    <script src="../week8/JavaScript/search.js"></script>
+    <script src="../week8/JavaScript/horizontalScrollGallery.js"></script>
+</body>
+
+</html>

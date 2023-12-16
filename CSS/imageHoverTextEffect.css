@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
+
+.imageHoverZoom {
+    margin-top: 20px;
+}
+
+.imageHoverZoom h4 {
+    margin: 10px 0;
+    font-family: Poppins;
+}
+
+/* Three image containers (use 25% for four, width: 33.33% forthree, and 50% for two, etc) */
+.imageHoverColumn {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.imageHoverRow img {
+    align-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 8px black, 10px 10px 8px #ff5793;
+}
+
+/* Clear floats after image containers */
+.imageHoverRow::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+}
+
+.imageHover img {
+    border-radius: 10px;
+}
+
+.imageHover {
+    position: relative;
+    width: 200px;
+}
+
+.imageHover__img {
+    display: block;
+    width: 100%;
+}
+
+.imageHover__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imageHover__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.imageHover__overlay--primary {
+    background: #ff5793;
+}
+
+.imageHover__overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.imageHover__overlay:hover {
+    opacity: 1;
+}
+
+.imageHover__overlay:hover>* {
+    transform: translateY(0);
+}
+
+.imageHover__title {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.imageHover__decription {
+    font-size: .75em;
+    margin-top: 0.25em;
+    text-align: center;
+}

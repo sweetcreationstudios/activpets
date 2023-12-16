@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
+
+/* Style the search box */
+.searchbar {
+    width: 20%;
+    font-size: 18px;
+    padding: 9px;
+    border: none #eee;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#searchBar {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.glass:hover {
+    color: #ff5793;
+    cursor: pointer;
+}

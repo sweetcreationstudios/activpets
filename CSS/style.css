@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
+
+
+
+/*
+Color Palette: 
+Blue: #00aaff,
+Purple: #aa00ff,
+Pink: #ff00aa,
+Orange: #ffaa00,
+Green: #aaff00
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /*        box-sizing: border-box;*/
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+    min-height: 100vh;
+    background-color: snow;
+}
+
+/*
+.wrapper {
+    margin: 0 auto;
+    margin: 0 auto 0 60px;
+    width: 1000px;
+    Blue background-color: #00aaff;
+    background-color: snow;
+}
+*/
+
+h1 {
+    font-family: Chewy;
+}

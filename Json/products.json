@@ -1,0 +1,38 @@
+var jsonObject = {
+    "products": [
+        {
+            "id": "001",
+            "title": "Blueberry-Banana",
+            "description": "8 oz",
+            "ingredients": [
+                "Blueberry",
+                "Banana"
+            ],
+            "image": "/images/treats/dogs/frozen-blueberry-banana.png",
+            "price": 8,
+        },
+        {
+            "id": "002",
+            "title": "Pumpkin-Apple",
+            "description": "8 oz",
+            "ingredients": [
+                "Pumpkin",
+                "Apple"
+            ],
+            "image": "images/treats/dogs/pumpkin-apple.JPG",
+            "price": 8,
+        },
+        {
+            "id": "003",
+            "title": "Peanut Banana Coconut",
+            "description": "8 oz",
+            "ingredients": [
+                "Peanut",
+                "Banana",
+                "Coconut"
+            ],
+            "image": "images/treats/dogs/peanut-banana-coconut.JPG",
+            "price": 8,
+        }
+    ]
+}

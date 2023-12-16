@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
+
+.outterwrapper {
+    background-color: pink;
+}
+
+.joinNewsletter {
+    background-color: pink;
+    /*    padding: 20px 20px 20px 80px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.joinNewsletter h2 {
+    /*    font-size: 30px;*/
+    margin: 10px 0;
+    font-family: Poppins;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.joinNewsletter h5 {
+    font-family: Poppins;
+    /*    font-size: 30px;*/
+    margin: 10px 0;
+}
+
+.signup-btn {
+    font-size: 20px;
+    font-family: Poppins;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: #1B1B1B;
+    font-size: var(--fs-7);
+    font-weight: var(--weight-600);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: auto;
+    transition: var(--transition-timing);
+}
+
+.signup-btn:hover {
+    filter: brightness(0.95);
+    /*    background: #FA8072;*/
+    background-color: #ff5793;
+}
+
+/* START No Thanks BTN  */
+.signup-btn {
+    font-size: 20px;
+    font-family: Poppins;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: #1B1B1B;
+    /* font-size: var(--fs-7); */
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: auto;
+    transition: var(--transition-timing);
+}
+
+.signup-btn:hover {
+    filter: brightness(0.95);
+    /*    background: #FA8072;*/
+    background-color: white;
+}
+
+/* END No Thanks BTN  */
+
+.joinNewsletter .inputNewsletter {
+    text-align: center;
+    font-size: var(--fs-7);
+    font-family: Poppins;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--cultured);
+    margin-bottom: 16px;
+
+}
+
+.joinNewsletter .inputNewsletter::placeholder {
+    color: lightgrey;
+}

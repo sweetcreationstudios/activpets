@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/week8/CSS/style.css">
+    <link rel="stylesheet" href="/week8/CSS/header.css">
+    <link rel="stylesheet" href="/week8/CSS/search.css">
+    <link rel="stylesheet" href="/week8/CSS/main.css">
+    <link rel="stylesheet" href="/week8/CSS/heroImg.css">
+    <link rel="stylesheet" href="/week8/CSS/contact.css">
+    <link rel="stylesheet" href="/week8/CSS/footer.css">
+    <!--    FONT AWESOME START  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--    FONT AWESOME END    -->
+    <title>ActivPets Bakey</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <div class="navigation">
+            <!--
+            <div class="headerTop">
+                <p>
+                    Love them like family. Nourish them like family.
+                </p>
+            </div>
+-->
+            <!--  START LOGO  -->
+            <div class="navbar">
+                <a href="/week8/index8.html">
+                    <img src="../../images/activpets-logos/activpets-logo-white-trans.png" alt="" height="100px">
+                </a>
+                <!-- END LOGO  -->
+
+
+                <!--                SEARCH STARTS-->
+                <!--                Reference Link: https://www.w3schools.com/howto/howto_js_search_menu.asp-->
+                <div class="searchbar">
+                    <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search.."
+                        title="Type in a category" name="searchBar">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+                <!--                SEARCH ENDS -->
+
+
+                <!--  START HEADER NAV LINKS  -->
+                <nav class="nav-links">
+                    <ol>
+                        <li><a href="/week8/index8.html">Home</a></li>
+                        <li><a href="/week8/service8.html">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="/week8/contact8.html">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!--  END HEADER NAV LINKS  -->
+    </header>
+
+    <main>
+
+
+        <!--      START HERO IMAGE-->
+
+
+        <div class="hero-image">
+            <div class="heroContainer">
+                <h1><span>CONTACT US</span></h1>
+                <span class="des">Pet Bakery, Grooming, Accessories & more!</span>
+                <a class="hero-btn" href="#ContactMessage">Send A Message</a>
+            </div>
+        </div>
+
+
+        <!--      END HERO IMAGE-->
+
+
+        <!--       START CONTACT US SECTION -->
+
+        <div class="contactContainer">
+            <div class="contactUs" id="ContactMessage">
+                <div class="title">
+                    <h2>Get in Touch</h2>
+                </div>
+                <div class="box">
+                    <!--  Form  -->
+
+                    <div class="contact form">
+                        <h3>Send a Message</h3>
+                        <form action="https://formspree.io/f/xgejbyon" method="POST">
+                            <div class="formBox">
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>First Name</span>
+                                        <input type="text" name="First" placeholder="First Name" autocomplete='off'
+                                            required />
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Last Name</span>
+                                        <input type="text" name="Last" placeholder="Last Name" autocomplete='off'
+                                            required>
+                                    </div>
+                                </div>
+
+
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Email</span>
+                                        <input type="email" name="Email" placeholder="Email Address" autocomplete='off'
+                                            required />
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Mobile</span>
+                                        <input type="text" name="Mobile" placeholder="1(234)567-8901" autocomplete='off'
+                                            required />
+                                    </div>
+                                </div>
+
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <span>Message</span>
+                                        <textarea name="message" placeholder="Write your message here..."
+                                            autocomplete='off' required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Info Box -->
+                    <div class="contact info">
+                        <h3>Contact Info</h3>
+                        <div class="infoBox">
+                            <div>
+                                <span>
+                                    <ion-icon name="location"></ion-icon>
+                                </span>
+                                <p>Los Angeles, California <br>United States of America</p>
+                            </div>
+                            <div>
+                                <span>
+                                    <ion-icon name="mail"></ion-icon>
+                                </span>
+                                <a href="mailto:activpets@gmail.com">activpets@gmail.com</a>
+                            </div>
+                            <div>
+                                <span>
+                                    <ion-icon name="call"></ion-icon>
+                                </span>
+                                <a href="tel:15623735503">1.562.373.5503</a>
+                            </div>
+                            <!-- Social Media Links MAIN SECTION -->
+                            <div class="sci">
+                                <li><a href="https://www.facebook.com/ActivPets/" target="_blank">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li><a href="https://www.instagram.com/activpets/" target="_blank">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                                <li><a href="https://www.youtube.com/@ActivPets" target="_blank">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+                                </li>
+                                <li><a href="https://www.tiktok.com/@ActivPets2" target="_blank">
+                                        <ion-icon name="logo-tiktok"></ion-icon>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <!--       END CONTACT US SECTION -->
+
+                    <!-- Map Box -->
+                    <div class="contact map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52929.82463927303!2d-118.08161949999999!3d33.98960445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d18b02bded21%3A0x57b0c36882c40e90!2sPico%20Rivera%2C%20CA!5e0!3m2!1sen!2sus!4v1700118879699!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--    START Footer Content-->
+    <footer>
+        <nav class="footerContainer">
+            <div class="socialIcons">
+                <ul>
+                    <a href="https://www.instagram.com/activpets/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ActivPets/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@ActivPets" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@ActivPets2" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </ul>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="/week8/index8.html">Home</a></li>
+                    <li><a href="/week8/service8.html">Service</a></li>
+
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="/week8/contact8.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footerBottom">
+            <p>
+                Copyright Reserved &copy; 2023; Designed by: <span class="designer">Sweet Creation Studios - Coder:
+                    <strong>Marilynn Ramirez</strong></span>
+            </p>
+            <p>
+                Do Not Sell or Share My Personal Information
+            </p>
+        </div>
+    </footer>
+    <!--    END Footer Content-->
+
+
+    <script src="../week8/JavaScript/search.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
