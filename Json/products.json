@@ -33,6 +33,210 @@ var jsonObject = {
             ],
             "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
             "price": 8,
+        },
+        {
+            "id": "004",
+            "title": "Blueberry-Banana",
+            "description": "8 oz",
+            "ingredients": [
+                "Blueberry",
+                "Banana"
+            ],
+            "image": "/images/treats/dogs/frozen-blueberry-banana.png",
+            "price": 8,
+        },
+        {
+            "id": "005",
+            "title": "Pumpkin-Apple",
+            "description": "8 oz",
+            "ingredients": [
+                "Pumpkin",
+                "Apple"
+            ],
+            "image": "/images/treats/dogs/pumpkin-apple.JPG",
+            "price": 8,
+        },
+        {
+            "id": "006",
+            "title": "Peanut Banana Coconut",
+            "description": "8 oz",
+            "ingredients": [
+                "Peanut",
+                "Banana",
+                "Coconut"
+            ],
+            "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
+            "price": 8,
+        },
+        {
+            "id": "007",
+            "title": "Blueberry-Banana",
+            "description": "8 oz",
+            "ingredients": [
+                "Blueberry",
+                "Banana"
+            ],
+            "image": "/images/treats/dogs/frozen-blueberry-banana.png",
+            "price": 8,
+        },
+        {
+            "id": "008",
+            "title": "Pumpkin-Apple",
+            "description": "8 oz",
+            "ingredients": [
+                "Pumpkin",
+                "Apple"
+            ],
+            "image": "/images/treats/dogs/pumpkin-apple.JPG",
+            "price": 8,
+        },
+        {
+            "id": "009",
+            "title": "Peanut Banana Coconut",
+            "description": "8 oz",
+            "ingredients": [
+                "Peanut",
+                "Banana",
+                "Coconut"
+            ],
+            "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
+            "price": 8,
+        },
+        {
+            "id": "010",
+            "title": "Blueberry-Banana",
+            "description": "8 oz",
+            "ingredients": [
+                "Blueberry",
+                "Banana"
+            ],
+            "image": "/images/treats/dogs/frozen-blueberry-banana.png",
+            "price": 8,
+        },
+        {
+            "id": "011",
+            "title": "Pumpkin-Apple",
+            "description": "8 oz",
+            "ingredients": [
+                "Pumpkin",
+                "Apple"
+            ],
+            "image": "/images/treats/dogs/pumpkin-apple.JPG",
+            "price": 8,
+        },
+        {
+            "id": "012",
+            "title": "Peanut Banana Coconut",
+            "description": "8 oz",
+            "ingredients": [
+                "Peanut",
+                "Banana",
+                "Coconut"
+            ],
+            "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
+            "price": 8,
+        },
+        {
+            "id": "013",
+            "title": "Blueberry-Banana",
+            "description": "8 oz",
+            "ingredients": [
+                "Blueberry",
+                "Banana"
+            ],
+            "image": "/images/treats/dogs/frozen-blueberry-banana.png",
+            "price": 8,
+        },
+        {
+            "id": "014",
+            "title": "Pumpkin-Apple",
+            "description": "8 oz",
+            "ingredients": [
+                "Pumpkin",
+                "Apple"
+            ],
+            "image": "/images/treats/dogs/pumpkin-apple.JPG",
+            "price": 8,
+        },
+        {
+            "id": "015",
+            "title": "Peanut Banana Coconut",
+            "description": "8 oz",
+            "ingredients": [
+                "Peanut",
+                "Banana",
+                "Coconut"
+            ],
+            "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
+            "price": 8,
+        },
+        {
+            "id": "016",
+            "title": "Blueberry-Banana",
+            "description": "8 oz",
+            "ingredients": [
+                "Blueberry",
+                "Banana"
+            ],
+            "image": "/images/treats/dogs/frozen-blueberry-banana.png",
+            "price": 8,
+        },
+        {
+            "id": "017",
+            "title": "Pumpkin-Apple",
+            "description": "8 oz",
+            "ingredients": [
+                "Pumpkin",
+                "Apple"
+            ],
+            "image": "/images/treats/dogs/pumpkin-apple.JPG",
+            "price": 8,
+        },
+        {
+            "id": "018",
+            "title": "Peanut Banana Coconut",
+            "description": "8 oz",
+            "ingredients": [
+                "Peanut",
+                "Banana",
+                "Coconut"
+            ],
+            "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
+            "price": 8,
+        },
+        {
+            "id": "019",
+            "title": "Blueberry-Banana",
+            "description": "8 oz",
+            "ingredients": [
+                "Blueberry",
+                "Banana"
+            ],
+            "image": "/images/treats/dogs/frozen-blueberry-banana.png",
+            "price": 8,
+        },
+        {
+            "id": "020",
+            "title": "Pumpkin-Apple",
+            "description": "8 oz",
+            "ingredients": [
+                "Pumpkin",
+                "Apple"
+            ],
+            "image": "/images/treats/dogs/pumpkin-apple.JPG",
+            "price": 8,
+        },
+        {
+            "id": "021",
+            "title": "Peanut Banana Coconut",
+            "description": "8 oz",
+            "ingredients": [
+                "Peanut",
+                "Banana",
+                "Coconut"
+            ],
+            "image": "/images/treats/dogs/peanut-banana-coconut.JPG",
+            "price": 8,
         }
     ]
 }
